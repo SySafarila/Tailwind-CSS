@@ -11,9 +11,9 @@ function rightButtonn() {
 }
 
 function show() {
-    document.getElementById('show').className = "";
+    document.getElementById('show').className = "md:flex";
 }
 
 function hidden() {
-    document.getElementById('show').className = "hidden";
+    document.getElementById('show').className = "hidden md:flex";
 }
