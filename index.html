@@ -8,18 +8,20 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
-  <nav class="flex bg-purple-800 px-2 py-1 md:p-3 justify-between shadow-md sticky top-0">
-    <button class="md:hidden bg-transparent hover:text-gray-200 text-white font-bold pt-1 px-2 rounded"><span class="material-icons">notifications</span></button>
-    <h3 class="text-white font-bold hover:text-gray-200 align-middle pt-1 md:pt-0"><a href="#" class="flex">Brand</a></h3>
-    <div id="show" class="hidden">
-      <ul class="flex flex-col md:flex-row text-white absolute top-0 right-0 bg-black md:bg-transparent h-screen md:h-0 pt-10 md:pt-3 pr-20 md:pr-2">
-        <li class="px-1 py-1 md:py-0 hover:text-gray-200"><a href="#">About</a></li>
-        <li class="px-1 py-1 md:py-0">
-          <button class="border border-yellow-400 px-2 rounded bg-transparent hover:bg-yellow-400 text-yellow-400 hover:text-black">Download</button>
-        </li>
+  <nav class="bg-purple-800 px-2 py-2 flex align-center justify-between">
+    <span class="md:hidden flex align-center">
+      <span class="material-icons text-white">notifications</span>
+    </span>
+    <span class="font-bold text-white">Brand</span>
+      <span class="md:hidden flex align-center cursor-pointer z-10" onclick="clickUl()">
+        <span class="material-icons text-white">menu</span>
+      </span>
+      <ul class="absolute right-0 top-0 bg-purple-500 flex flex-col pt-10 h-screen md:flex-row md:static md:p-0 md:h-auto transform origin-top scale-y-0 md:scale-y-100 md:bg-transparent transition-all duration-75 ease-in-out" id="ul-navbar">
+        <li class="py-2 px-2 text-white md:py-0">link</li>
+        <li class="py-2 px-2 text-white md:py-0">link</li>
+        <li class="py-2 px-2 text-white md:py-0">link</li>
+        <li class="py-2 px-2 text-white md:py-0">link</li>
       </ul>
-    </div>
-    <button class="z-10 md:hidden bg-transparent hover:text-gray-200 text-white font-bold pt-1 px-2 rounded" onclick="rightButtonn()"><span class="material-icons" id="rightButton">menu</span></button>
   </nav>
   <script src="/script/script.js"></script>
 </body>
